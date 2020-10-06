@@ -52,7 +52,7 @@ const CaseBox = (props) => {
                     {(props.info.status === i18n.t('caseStatus.pending')) ?
                         <div>
                             <p>
-                                <Link className="btn-sm btn btn-primary" to={`/case-update/${ props.info.tracking_id }`}>{i18n.t('button.update')}</Link>
+                                <Link className="btn-sm btn btn-info-blue" to={`/case-update/${ props.info.tracking_id }`}>{i18n.t('button.update')}</Link>
                                 <Button color="success" size="sm" onClick={(e) => props.handleCaseStatus(e, props.info.tracking_id, RECOVERED_CASE)}>{i18n.t('button.recover')}</Button>{''}
                                 {props.info.get_blocked === true ?
                                     <Button color="danger" size="sm" onClick={(e) => props.handleCaseStatus(e, props.info.tracking_id, BLOCKED_CASE)}>{i18n.t('button.block')}</Button>

@@ -636,7 +636,7 @@ a {
     h1 {
         font-size: 12rem;
         color: #f2f2f2;
-        text-shadow: 2px 0px 0px #3f51b5, -2px 0px 0px #3f51b5, 0px 2px 0px #3f51b5, 0px -2px 0px #3f51b5;
+        text-shadow: 2px 0px 0px $theme-primary, -2px 0px 0px $theme-primary, 0px 2px 0px $theme-primary, 0px -2px 0px $theme-primary;
         @media (max-width: 480px) {
             font-size: 9rem;
         }
@@ -809,7 +809,7 @@ a {
 		}
 
 		span {
-			color: #3f51b5;
+			color: $theme-primary;
 		}
 
 	}
@@ -1230,7 +1230,7 @@ article.bglite {
 		}
 
 		&[value="true"] + .switch {
-			background-color: #3f51b5;
+			background-color: $theme-primary;
 
 			&:before {
 				left: 0.5rem;
@@ -1534,4 +1534,12 @@ body {
 		margin: 5px auto 0;
 	}
 
+}
+
+.btn-info-blue {
+	background-color: #3f51b5;
+	color: white;
+	&:hover {
+        color:white;
+    }
 }
